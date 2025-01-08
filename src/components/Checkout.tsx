@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useSelector } from 'react-redux'
-import { AppDispatch, RootState } from '../redux/store'
+import { RootState } from '../redux/store'
 import { Product } from '../types/Product'
 import { useEffect, useState } from 'react'
 

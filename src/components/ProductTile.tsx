@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React from 'react'
 import { Product } from '../types/Product'
 import { addToBasket } from '../redux/slices/BasketSlice'
 import { useDispatch } from 'react-redux'
