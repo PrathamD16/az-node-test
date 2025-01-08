@@ -16,10 +16,10 @@ const productSlice = createSlice({
     initialState,
     reducers: {},
     extraReducers: (builder) => {
-        builder.addCase(fetchProduct.fulfilled, (state, action: PayloadAction<Product[]>) => {
+        builder.addCase(fetchProduct.fulfilled, (_state , action: PayloadAction<Product[]>) => {
             return action.payload
         })
-        builder.addCase(fetchProduct.rejected, (state, action) => {
+        builder.addCase(fetchProduct.rejected, (_state, action) => {
             console.log(`Failed to fetch the product ${action.error}`)
         })
     },
